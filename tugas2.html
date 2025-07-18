@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Saya</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    hr {
+      margin: 20px 0;
+    }
+
+    .section {
+      border: 1px solid #000;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #007BFF;
+      color: white;
+      padding: 10px;
+    }
+
+    .menu a {
+      margin-left: 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .header-section {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .blue-button {
+      background-color: blue;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .blue-button:hover {
+      background-color: black;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .biodata {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      text-align: center;
+    }
+
+    .biodata-header {
+      padding: 10px;
+    }
+
+    .biodata-info {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .portofolio {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .portofolio-header {
+      padding: 10px;
+    }
+
+    .portofolio-item {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      padding: 18px 12px 20px 12px;
+      transition: box-shadow 0.3s, transform 0.3s;
+      border: 1px solid #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 340px;
+    }
+
+    .portofolio-item:hover {
+      box-shadow: 0 6px 20px rgba(0,123,255,0.18);
+      transform: translateY(-4px) scale(1.03);
+    }
+
+    .portofolio-item img {
+      width: 100%;
+      max-width: 220px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+      background: #f5f5f5;
+    }
+
+    .portofolio-item b {
+      font-size: 1.08em;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .portofolio-item br {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .header-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .biodata {
+        grid-template-columns: 1fr;
+      }
+
+      .portofolio {
+        grid-template-columns: 1fr;
+      }
+      .portofolio-item {
+        min-height: unset;
+      }
+    }
+    .footer {
+      background-color: #007BFF;
+      color: white;
+      text-align: center;
+      padding: 18px 0 12px 0;
+      font-size: 1em;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Section 1: Header dan Menu -->
+  <div class="section menu">
+    <div>Brand</div>
+    <div>
+      <a href="#header">Header</a> |
+      <a href="#biodata">Biodata</a> |
+      <a href="#portofolio">Portofolio</a>
+    </div>
+  </div>
+
+  <!-- Section 2: Judul dan Gambar -->
+  <div class="section header-section" id="header">
+    <div>
+      <h3 style="text-align: center;"><b>Selamat Datang di Website Saya</b></h3>
+      <p style="text-align: center;">Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
+      <div class="button-container">
+        <button class="blue-button">Pelajari Lebih Lanjut</button>
+      </div>
+    </div>
+    <div style="text-align:center">
+      <img src="https://static.vecteezy.com/system/resources/previews/024/183/525/non_2x/avatar-of-a-man-portrait-of-a-young-guy-illustration-of-male-character-in-modern-color-style-vector.jpg" alt="Foto" style="width: 150px; height: 80px;">
+    </div>
+  </div>
+
+  <!-- Section 3: Biodata Box Style -->
+  <div class="section" id="biodata">
+    <div class="biodata-header" style="text-align:center">
+      <h2>About Me</h2>
+      <p>Saya adalah lulusan S1 Teknik Informatika Universitas Gunadarma</p>
+    </div>
+    <div class="biodata">
+      <div class="biodata-info">
+        <b>Full Name</b>
+        <p>Riyan Mardika</p>
+      </div>
+      <div class="biodata-info">
+        <b>Education</b>
+        <p>S1 Teknik Informatika</p>
+      </div>
+      <div class="biodata-info">
+        <b>Pekerjaan</b>
+        <p>Freelance</p>
+      </div>
+      <div class="biodata-info">
+        <b>Contact</b>
+        <p>081290823081</p>
+      </div>
+      <div class="biodata-info">
+        <b>Hobi</b>
+        <p>Renang</p>
+      </div>
+      <div class="biodata-info">
+        <b>Alamat</b>
+        <p>Lubuk Basung</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4: Portofolio -->
+  <div class="section" id="portofolio">
+    <div class="portofolio-header" style="text-align:center">
+      <h2>Portofolio</h2>
+    </div>
+    <div class="portofolio">
+      <div class="portofolio-item">
+        <img src="https://cdn-web.ruangguru.com/landing-pages/assets/hs/10GEO_-_Pengolahan_data_dalam_sistem_informasi_geografis-01.png" alt="Proyek 1">
+        <b>Sistem Informasi Geografis</b><br>
+        Sistem Informasi Geografis Sebaran Sekolah Menengah Atas di kota Depok.
+      </div>
+      <div class="portofolio-item">
+        <img src="https://www.figma.com/community/resource/ddf42544-dcf5-4cc2-ba23-956b66c2ef33/thumbnail" alt="Proyek 2">
+        <b>Website</b><br>
+        Membuat website yang memuat berbagai informasi seputar pemerintahan kota Bukittinggi.
+      </div>
+      <div class="portofolio-item">
+        <img src="https://img.freepik.com/premium-vector/youtube-thumbnail-web-banner-design-template-corporate-business-digital-marketing-agency_603915-119.jpg" alt="Proyek 3">
+        <b>Website 3</b><br>
+        Membuat Website E-Learning.
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    &copy; 2025@Riyan Mardika. All rights reserved.
+  </footer>
+</body>
+</html>
